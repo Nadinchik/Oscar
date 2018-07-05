@@ -1,3 +1,15 @@
+@font-face {
+    font-family: LatoRegular;
+    src: url("../fonts/Lato-Regular.ttf");
+}
+@font-face {
+    font-family: LatoBold;
+    src: url("../fonts/Lato-Bold.ttf");
+}
+@font-face {
+    font-family: LatoLight;
+    src: url("../fonts/Lato-Light.ttf");
+}
 
 * {
     margin: 0;
@@ -26,3 +38,65 @@ html {
     height: 100%;
     min-height: 100%;
     position: relative;}
+
+body {
+    font-family: LatoRegular;
+    font-size: 14pt;
+    height: 100%;
+    min-height: 100%;
+    position: relative;}
+
+.header{
+    min-width: 1360px;
+    position: relative;
+    padding: 100px 0 45px 15px;
+    background: url("../image/header.jpg") no-repeat center;
+    background-size: cover}
+
+.headline h1{
+    font-family: LatoBold, sans-serif;
+    font-size: 60pt;
+    margin-bottom: 10px;
+    color: #fff;}
+
+.headline p{
+    width: 60%;
+    font-family: LatoLight, sans-serif;
+    font-size: 30pt;
+    margin-bottom: 25px;
+    color: #fff;}
+
+.header__author ul{
+    display: flex;
+    align-items: center;
+    font-family: LatoLight, sans-serif;
+    font-size: 16pt;
+    color: #fff;}
+
+.header__author li{
+    padding-right: 30px;
+    align-items: center; }
+
+.header__author li:last-child{
+    padding-right: 0;}
+
+.header__author img {
+    margin-right: 15px;
+    align-self: center}
+
+.header__list ul{
+    display: flex;
+    margin-top: 200px;}
+
+.header__list a{
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: #fff;}
+
+.header__list a:hover{
+    color: #b7722c;
+}
+
+.header__list img{
+    margin-right: 8px;
+}
