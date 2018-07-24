@@ -10,6 +10,10 @@
     font-family: LatoLight;
     src: url("../fonts/Lato-Light.ttf");
 }
+@font-face {
+    font-family: MyriadPro-Regular;
+    src: url("../fonts/MyriadPro-Regular.ttf");
+}
 
 * {
     margin: 0;
@@ -49,6 +53,11 @@ body {
 .flex{display: flex;}
 
 .container{ padding: 40px 0 40px 185px;}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;}
 
 .header{
     min-width: 1360px;
@@ -109,14 +118,15 @@ body {
 .header__list a.donate{background-position: 0 -93px;}
 
 .showmore{
-    height: 57px;
+    height: 60px;
+    padding: 20px;
+    vertical-align: middle;
+    text-align: center;
     background: #cfbb95;}
 
 .showmore p{
-    margin-top: 20px;
     font-family: LatoBold, sans-serif;
     font-size: 16px;
-    text-align: center;
     text-transform: uppercase;
     color: #fff;}
 
@@ -151,8 +161,8 @@ body {
 .news__author,
 .news__name a,
 .news__date,
-.main__list a
-.replic__date {
+.main__list a,
+.replies__date {
     color: #8b8b8b;}
 
 .news__name img{
@@ -170,6 +180,9 @@ body {
 
 .news__image img:last-child{
     margin-right: 0;}
+
+.main{
+    flex: 1 0 auto;}
 
 .main__list a{
     display: inline-block;
@@ -231,7 +244,105 @@ body {
     left: 5px;
     margin: 0 -100% 0 0;}
 
+.main__replies{
+    width: 830px;}
+
+.replies__comment{
+    padding-top: 55px;}
+
+.replies__comment img{
+    display: flex;
+    width: 73px;
+    height: 73px;
+    margin-right: 20px;}
+
+.replies__comment p{
+    font-size: 16px;
+    line-height: 25px;}
+
+.replies__content{
+    flex-direction: column;
+    flex-wrap: wrap;}
+
+.replies__content h4{
+    font-family: LatoBold;
+    font-size: 16px;
+    margin-right: 20px;}
+
+.replies__content a{
+    font-size: 16px;
+    margin-top: 4px;
+    color: #2e60ad;}
+
+.replies__content a:hover{
+    color: #6989a7;}
+
+.replies__answer{
+    padding: 45px 0 0 85px;}
+
+textarea{
+    width: 830px;
+    height: 180px;
+    padding: 20px 0 0 20px;
+    margin-top: 50px;
+    overflow: auto;
+    resize: none;
+    font-family: MyriadPro-Regular;
+    font-size: 16px;
+    color: #8d8c8d;
+    border: 1px solid #f0f0f0;
+    border-radius: ;
+    background: #f0f0f0;}
+
+.main__pages{
+    width: 830px;}
+
+ul.pages__list{
+  padding-left: 80px;}
+
+.pages__list a{
+    display: flex;
+    margin-right: 20px;
+    text-align: center;}
+
+.main__pages a:hover{
+    color: #b7722c;}
 
 
+footer{
+    display: flex;
+    flex: 0 0 auto;
+    padding: 30px 15px;
+    justify-content: space-between;
+    height: 90px;
+    background: #000;}
 
+footer span{
+    font-size: 18px;
+    color: #818181;}
 
+.footer__social a{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background: url("../image/footer__sprite.png") no-repeat;
+    background-color: #828282;
+    border-radius: 50%;
+    border: 1px solid #828282;}
+
+.footer__social a:hover{
+    background: url("../image/footer__sprite_ac.png") no-repeat;
+    background-color: #828282;}
+
+.footer__social a.in{
+    background-position: 0 0;}
+
+.footer__social a.vk{
+    background-position: 0 -30px;}
+
+.footer__social a.fb{
+    background-position: 0 -60px;}
+
+.footer__social a:last-child{
+    margin-right: 0;}
